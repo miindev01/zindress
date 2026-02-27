@@ -15,7 +15,7 @@
 body{
   margin:0;
   font-family:"Sarabun",sans-serif;
-  background:linear-gradient(135deg,#c21833,#8e1026);
+  background:linear-gradient(135deg,#58121e,#8e1026);
   color:#333;
 }
 
@@ -178,6 +178,14 @@ body{
   animation:pulse 1.8s infinite;
 }
 
+.close-modal{
+  background:#eee;
+  display:block;
+  margin:12px auto 0; /* 👈 ทำให้อยู่กลาง */
+  width:60%;
+  text-align:center;
+}
+
 /* ✨ เต้นเบา ๆ */
 @keyframes pulse{
   0%{ transform:translateX(-50%) scale(1); }
@@ -289,9 +297,7 @@ const todayStatus = {
   14: "rented",
 };
 
-//vailable,rented
 
-// แสดงสถานะ
 for(let id in todayStatus){
   const el = document.getElementById("status"+id);
 
